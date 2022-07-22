@@ -1,0 +1,225 @@
+/* reset */
+body,
+header,
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #e6dcd0;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+header {
+  background-color: #5a8f7e;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  background-image: url(assets/header-background.svg);
+  /* background-repeat: no-repeat; */
+}
+
+header p {
+  font-family: "Montserrat", sans-serif;
+  margin-top: -20px;
+}
+
+h1 {
+  font-family: "Sacramento", cursive;
+  font-weight: normal;
+  font-size: 34pt;
+  margin-bottom: 7px;
+}
+
+audio {
+  display: none;
+}
+
+main {
+  flex: 1;
+}
+
+.maincontainer {
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.card {
+  width: 30%;
+  height: 20%;
+  border: 4px solid white;
+  border-radius: 5px;
+  box-sizing: border-box;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: all 0.8s ease;
+  cursor: pointer;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.front {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  background-image: url("assets/card-back.svg");
+}
+
+.back {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+  background-color: #eee;
+}
+
+.flipCard {
+  transform: rotateY(180deg);
+}
+
+button {
+  /* margin-right: 50px; */
+  background-color: #003d2a;
+  color: white;
+  border: solid 2px white;
+  padding: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.hide {
+  display: none;
+}
+
+button:hover {
+  background-color: #edbf85;
+}
+
+.timer {
+  left: 50px;
+  border: white 1px solid;
+  height: 10px;
+  width: 20px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 145px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  position: relative;
+  margin: auto;
+  text-align: center;
+  background-color: #ac80a0;
+  color: white;
+  padding: 2.5rem;
+  font-family: "Montserrat", sans-serif;
+  border: 5px dotted #d1ca98;
+  border-radius: 20px;
+  width: 50%;
+}
+
+.win-modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 145px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.win-statement {
+  position: relative;
+  margin: auto;
+  text-align: center;
+  background-color: #ac80a0;
+  color: white;
+  padding: 2.5rem;
+  font-family: "Montserrat", sans-serif;
+  border: 5px dotted #d1ca98;
+  border-radius: 20px;
+  width: 50%;
+}
+
+.modal h2 {
+  font-family: "Sacramento", cursive;
+  font-size: 30px;
+  font-weight: lighter;
+  margin: 0;
+}
+
+.close {
+  color: #fff;
+  float: right;
+  top: 0;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.win-close {
+  color: #fff;
+  float: right;
+  top: 0;
+  cursor: pointer;
+  font-size: 28px;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal h6 {
+  font-style: italic;
+  font-weight: lighter;
+}
+
+footer {
+  background-color: #5a8f7e;
+  padding: 12px;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media only screen and (min-width: 760px) {
+  .card {
+    width: 23%;
+    height: 30%;
+    margin: 5px;
+  }
+
+  .modal-content {
+    width: 25%;
+  }
+} ;

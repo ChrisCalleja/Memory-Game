@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Sacramento&display=swap"
+      rel="stylesheet"
+    />
+    <title>Plant Memory Game</title>
+  </head>
+  <body>
+    <header>
+      <h1>Plant-emonium</h1>
+      <p>a plant memory game</p>
+    </header>
+    <main>
+      <audio controls autoplay loop>
+        <source
+          id="menuAudio"
+          src="assets/your-love-is-what-i-need-soundroll-main-version-12292-03-37.mp3"
+        />
+        <embed
+          src="assets/your-love-is-what-i-need-soundroll-main-version-12292-03-37.mp3"
+          autoplay="autoplay"
+          loop="loop"
+        />
+      </audio>
+      <div class="maincontainer">
+        <div class="win-modal">
+          <span class="win-close">&times;</span>
+          <p class="win-statement"></p>
+        </div>
+
+        <div class="card" data-plant="pothos">
+          <div class="front">
+            <img src="assets/card-back.svg" alt="front of card" />
+          </div>
+          <div class="back">
+            <img src="assets/card-pothos.svg" alt="back of card" />
+          </div>
+        </div>
+        <div class="card" data-plant="pothos">
+          <div class="front">
+            <img src="assets/card-back.svg" alt="front of card" />
+          </div>
+          <div class="back">
+            <img src="assets/card-pothos.svg" alt="back of card" />
+          </div>
+        </div>
+        <div class="card" data-plant="begonia">
+          <div class="front">
+            <img src="assets/card-back.svg" alt="front of card" />
+          </div>
+          <div class="back">
+            <img src="assets/card-begonia.svg" alt="back of card" />
+          </div>
+        </div>
+        <div class="card" data-plant="begonia">
+          <div class="front">
+            <img src="assets/card-back.svg" alt="front of card" />
+          </div>
+          <div class="back">
+            <img src="assets/card-begonia.svg" alt="back of card" />
+          </div>
+        </div>
+        <div class="card" data-plant="monstera">
+          <div class="front">
+            <img src="assets/card-back.svg" alt="front of card" />
+          </div>
+          <div class="back">
+            <img src="assets/card-monstera.svg" alt="back of card" />
+          </div>
+        </div>
+        <div class="card" data-plant="monstera">
+          <div class="front">
+            <img src="assets/card-back.svg" alt="front of card" />
+          </div>
+          <div class="back">
+            <img src="assets/card-monstera.svg" alt="back of card" />
+          </div>
+        </div>
+        <div class="card" data-plant="money">
+          <div class="front">
+            <img src="assets/card-back.svg" alt="front of card" />
+          </div>
+          <div class="back">
+            <img src="assets/card-money.svg" alt="back of card" />
+          </div>
+        </div>
+        <div class="card" data-plant="money">
+          <div class="front">
+            <img src="assets/card-back.svg" alt="front of card" />
+          </div>
+          <div class="back">
+            <img src="assets/card-money.svg" alt="back of card" />
+          </div>
+        </div>
+        <div class="card" data-plant="mystery">
+          <div class="front">
+            <img src="assets/card-back.svg" alt="front of card" />
+          </div>
+          <div class="back">
+            <img src="assets/card-mystery.svg" alt="back of card" />
+          </div>
+        </div>
+        <div class="card" data-plant="mystery">
+          <div class="front">
+            <img src="assets/card-back.svg" alt="front of card" />
+          </div>
+          <div class="back">
+            <img src="assets/card-mystery.svg" alt="back of card" />
+          </div>
+        </div>
+        <div class="card" data-plant="snake">
+          <div class="front">
+            <img src="assets/card-back.svg" alt="front of card" />
+          </div>
+          <div class="back">
+            <img src="assets/card-snake.svg" alt="back of card" />
+          </div>
+        </div>
+        <div class="card" data-plant="snake">
+          <div class="front">
+            <img src="assets/card-back.svg" alt="front of card" />
+          </div>
+          <div class="back">
+            <img src="assets/card-snake.svg" alt="back of card" />
+          </div>
+        </div>
+      </div>
+      <!-- modal code -->
+
+      <div class="modal">
+        <section class="modal-content">
+          <!-- to close modal -->
+          <span class="close">&times;</span>
+
+          <h2>Plant-emonium!</h2>
+          <p>
+            Finally some house plants you can’t kill! Test your knowledge and
+            memory with our calming plant matching game. Grab a cup of tea, your
+            comfiest pair of sweats and settle in with your new favorite after
+            work wind down activity. Ready? Okay, bloomer!
+          </p>
+          <h6>
+            Music from Uppbeat (free for Creators!):
+            https://uppbeat.io/t/soundroll/your-love-is-what-i-need License
+            code: MHMLLEDCINQWKGSE
+          </h6>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <button class="start">Start</button>
+      <button class="modal-trigger">Learn More</button>
+      <div class="button-container">
+        <button class="reset">Reset</button>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
